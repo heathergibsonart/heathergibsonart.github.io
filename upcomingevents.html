@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Gibson Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+               <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="upcomingevents.html">UPCOMING EVENTS</a></li>
+                    <li><a href="commissions.html">COMMISSIONS/EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>There are no upcoming events planned curretnly</h1>
+        
+        <script>
+    
+            var navLinks = document.getElementById("navLinks");
+        
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-300px";
+            }
+        
+        
+            </script>
+
+</body>
+</html>

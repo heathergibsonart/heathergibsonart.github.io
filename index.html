@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Gibson Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+               <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="upcomingevents.html">UPCOMING EVENTS</a></li>
+                    <li><a href="commissions.html">COMMISSIONS/EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+           </div>
+           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Heather Gibson Art</h1>
+        <div class = "row">
+            <div class = "gallery-pics">
+                <img src = "GalleryIMGS/flowermind2.jpg" alt="Flowers" width="380" height="530px"> 
+            </div>
+            <div class = "gallery-pics">
+                <img src = "GalleryIMGS/Butterfly.jpg" alt="Butterfly" width="380px" height="530px"> 
+            </div>
+            <div class = "gallery-pics">
+                <img src = "GalleryIMGS/Pumpkin.jpg" alt="Pumpkin" width="380px" height="530px"> 
+            </div>
+        </div>
+        <div class = "gallery-link">
+            <a href="gallery.html" class="hero-btn">Visit the gallery</a>
+        </div>
+        
+    </section>
+    
+     <!------- Upcoming Events ------->
+   
+     <section class = "upcoming-events">
+        <div class = "event-info">
+        <h1>Upcoming Events</h1>
+        <img src="GalleryIMGS/FlowerMind.jpg" alt="Flower Mind">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Check below to see all of the upcoming events!</p>
+            <div class = "comm-link">
+                <a href="upcomingevents.html" class="hero-btn">Upcoming Events</a>
+            </div>
+        </div>
+    </section> 
+    
+
+     <!------- Commissions/Private Events ------->
+     
+     <section class = "commissions">
+        <div class = "comm-info">
+        <h1>Commissions and Private Events</h1>
+        <img src="GalleryIMGS/HG_Events2.jpg" alt="Happy patrons of a private event">
+            <p>Looking for an artist to teach a private class to you and a small group of friends? Always wanted to create a beautiful painting with help from a professional? Booking a private event with Heather will allow you to personally be taught how to paint a design agreed upon by Heather.</p>
+            <p>Heather also has commissions available if you want a high quality painting of a design of your choice</p>
+            <div class = "comm-link">
+                <a href="commissions.html" class="hero-btn">Go Now!</a>
+            </div>
+        </div>
+    </section> 
+
+    <!------- About ------->
+    <section class = "about">
+        <div class="text-box"> 
+            <img src="GalleryIMGS/heather.jpg" alt="Heather Gibson">
+            <h1 id="about">Meet Heather Gibson</h1>
+            <p>I remember always being drawn to art since I was a very young child. I believe art is a very important part of life, whether that be expressed through the visual arts, music, literature, or theater.
+                I am interested in contrasting ideas, sounds, and imagery expressed through various mediums. I find humans and our connections to one another, to nature, and to the physical world around us as the main inspiration for my work.
+                I love art that is meaningful but also art for art's sake. A 2016 graduate of West Virginia State University with a BA in Art</p>
+                
+        </div>   
+    </section>
+
+    <script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-300px";
+    }
+
+
+    </script>
+       
+</body>
+</html>
